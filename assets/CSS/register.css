@@ -1,0 +1,130 @@
+.register{
+    background-color: #34b1c4;
+    width: 100%;
+    display: block;
+    height: 1500px;
+}
+/* Register img Kodları */
+.register-img{
+    width: 55%;
+    display: block;
+}
+.register-img img{
+    max-width: 100%;
+    margin: 0 0 0 35px;
+}
+/* Register img Kodları */
+
+/* Register content Kodları*/
+
+.register-content{
+    width: 700px;
+    margin: 80px 0 30px 35px;
+}
+.register-header{
+    width: 100%;
+}
+.register-header h1{
+    font-size: 40px;
+    color: white;
+    margin-bottom: 25px;
+}
+.register-paragraph p{
+    font-size: 20px;
+    color: white;
+    line-height: 30px;
+}
+
+/* Register content Kodları*/
+
+/*Register input kodları*/
+.register-input{
+    width: 500px;
+    margin: 10px 0 10px 35px;
+    display: flex;
+    flex-wrap: wrap
+}
+.register-input input , .register-input select {
+    width: 40%;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 20px 10px 0;
+    border: 1px solid white;
+    background-color: #34b1c4;
+    color: white;
+    font-size: 14px;
+    outline: none !important;
+}
+.register-input input::placeholder{
+    color: white;
+    font-size: 14px;
+}
+#input-button-register{
+    width: 84%;
+    color: #34b1c4;
+    background-color: white;
+    border: 1px solid white;
+}
+#input-button-register:hover{
+    color: white;
+    background-color: #34b1c4;
+}
+/*Register input kodları*/
+
+
+/* Register last content kodları*/
+.register-last-content{
+    width: 320px;
+    margin: 10px 0 0 35px;
+}
+.register-last-content p {
+    color: white;
+    font-size: 14px;
+}
+/* Register last content kodları*/
+
+
+/*  Responsive  */
+/*@@@@@@@@@@@@@@*/
+
+
+@media screen and (max-width:1000px) {
+    .register-content , .register-input , .register-last-content{
+        width: 90%
+    }
+    .register-img,.register-img img{
+        width: 85%;
+        display: block;
+        margin:  auto;
+    }
+    
+}
+
+
+@media screen and (max-width:600px){
+    .register-input input , .register-input select{
+        width: 90% !important;
+    }
+}
+
+@media screen and (max-width:1700px){
+    .register{
+        height: 1400px;
+    }
+}
+@media screen and (max-width:1500px){
+    .register{
+        height: 1300px;
+    }
+}
+@media screen and (max-width:1200px){
+    .register{
+        height: 1200px;
+    }
+}
+@media screen and (max-width:800px){
+    .register{
+        height: 1100px;
+    }
+}

@@ -1,0 +1,82 @@
+.interlayer-container{
+    background-color: #5D5D5D;
+    width: 100%;
+    height: 350px;
+}
+/* interlayer header kodları*/
+
+.interlayer-header{
+    width: 80%;
+    height: 100px;
+    text-align: center;
+    margin:auto;
+    display: flex;
+    align-items: center;
+}
+.interlayer-header h1{
+    font-size: 40px;
+    color: white;
+    width: 100%;
+}
+
+/* interlayer header kodları*/
+
+/* interlayer paragraph kodları*/
+
+.interlayer-paragraph{
+    width: 80%;
+    height: 100px;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.interlayer-paragraph p{
+    font-size: 20px;
+    color: white;
+}
+
+/* interlayer paragraph kodları*/
+
+/* interlayer link kodları*/
+
+.interlayer-link{
+    width: 50%;
+    height: 100px;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.interlayer-link a{
+    text-decoration: none;
+    padding: 30px;
+    border: 1px solid #34b1c4;
+    border-radius: 5px;
+    background-color: #34b1c4;
+    color: white;
+    font-size: 20px;
+}
+.interlayer-link a:hover{
+    background-color: #2980b9;
+}
+
+/* interlayer link kodları*/
+
+/* responsive */
+
+@media screen and (max-width:500px) {
+    .interlayer-header h1{
+        font-size: 30px;
+    }
+    .interlayer-paragraph p{
+        font-size: 16px;
+    }
+    .interlayer-link a{
+        text-decoration: none;
+        padding: 20px;
+        font-size: 13px;
+    }
+}

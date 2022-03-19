@@ -1,0 +1,48 @@
+.sponsor{
+    width: 100%;
+    height: 130px;
+    background-color: #eef0f1;
+    display: block;
+    position: relative;
+}
+.sponsor .sponsor-img{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-evenly;
+    
+    align-items: center ;
+    width: 100%;
+    height: 100%;
+}
+.sponsor-img img{
+    width: 15%;
+    opacity: 0.3;
+}
+.sponsor-img img:hover{
+    opacity: 1;
+    transition: all 0.25s ease-in;
+    /* buradaki transition olayını sor*/
+}
+@media screen and (max-width:1200px) {
+    .sponsor{
+        height: 100px;
+    }
+}
+@media screen and (max-width:800px) {
+    .sponsor{
+        height: 140px;
+    }
+    .sponsor .sponsor-img{
+        flex-wrap: wrap;
+    }
+    .sponsor .sponsor-img img{
+        width: 30%;
+    }
+}
+@media screen and (max-width:500px){
+    .sponsor .sponsor-img img{
+        width: 34%;
+    }
+}

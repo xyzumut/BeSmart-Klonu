@@ -1,0 +1,86 @@
+.contact-container{
+    background-color: #393F43;
+    height: 750px;
+}
+
+/*features header kodları*/
+
+.contact-style{
+    background-color:#393F43 ;
+}
+.contact-style h1,.contact-style i,.contact-style p{
+    color: white !important;
+}
+.contact-style span{
+    background-color: white !important;
+}
+
+/*features header kodları*/
+
+/*  contact-input kodları  */
+.contact-input{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contact-input input{
+    width: 34%;
+    background-color:#393F43 ;
+    border: 1px solid #4c5358;
+    border-radius: 10px;
+    color: white;
+    margin: 20px;
+    padding: 20px;
+    outline: none !important;
+    font-size: 16px;
+}
+.contact-input input:hover{
+    border: 1px solid white;
+}
+.contact-input input::placeholder{
+    color: white;
+}
+.contact-input textarea{
+    width: 71%;
+    height: 220px;
+    background-color: #393F43;
+    border: 1px solid #4c5358;
+    border-radius: 10px;
+    outline: none !important;
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+}
+.contact-input textarea:hover{
+    border: 1px solid white;
+}
+#send-message{
+    width: 30%;
+    background-color: #34b1c4;
+    border: 1px solid #4c5358;
+    font-size: 20px;
+}
+#send-message:hover{
+    background-color: inherit;
+    color: #34b1c4;
+}
+
+/*  contact-input kodları  */
+
+/* responsive */
+@media screen and (max-width:800px) {
+    .contact-container{
+        height: 1000px;
+    }
+    .contact-input input{
+        width: 100%;
+    }
+    .contact-input textarea{
+        width: 95%;
+    }
+    #send-message{
+        width: 60%;
+    }
+}

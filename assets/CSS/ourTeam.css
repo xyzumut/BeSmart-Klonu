@@ -1,0 +1,139 @@
+.our-team{
+    width: 100%;
+    height: 550px;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*  slider kısmı kodları başlangıç*/
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.slider-kapsayici{
+    width: 700px;
+    height: 290px;
+    position: relative;
+    overflow:hidden ;
+    margin: auto;
+}
+.slider-content{
+    width: 200%;
+    animation: slide 2s infinite;
+}
+.slider-kapsayici-item{
+    width: 50%;
+    height: 290px;
+    float: left;
+}
+.slider-kapsayici-img{
+    float: left;
+    width: 30%;
+    height: 200px;
+    position: relative;
+}
+.slider-kapsayici-img:nth-child(2){
+    margin-right: 29px;margin-left:29px;
+}
+.slider-kapsayici-img img{
+    width: 100%;
+    height: 100%;
+}
+.slider-img-content{
+    width: 100%;
+    height: 50px;
+    background-color: #EEF0F1;
+    position: absolute;
+    bottom: -50px;
+    text-align: center;
+}
+.slider-img-content h1{
+    font-size: 16px ;
+    color: black;
+    margin: 5px 0 0 0;
+}
+.slider-img-content p{
+    font-size: 12px ;
+    color: black;
+    margin:2px 0 0 0;
+}
+
+@keyframes slide {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(-700px);
+    }
+    
+}
+/*    slider kısmı kodları sonu   */
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*        non slider kısmı        */
+
+.non-slider{
+    width: 100%;
+    height: 400px;
+    display: none;
+}
+.non-slider-kapsayici-img{
+    width: 26%;
+    position: relative;
+}
+.non-slider-kapsayici-img img{
+    width: 100%;
+    margin-bottom: 100px;
+}
+.non-slider-kapsayici-img h1{
+    color: black;
+    font-size: 13px;
+    margin-top:7px;
+    text-align: center;
+}
+.non-slider-kapsayici-img p{
+    color:black;
+    font-size:10px;
+    text-align: center;
+}
+.non-slider-img-content{
+    background-color: #EEF0F1;
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+    height: 50px;
+}
+
+/*        non slider kısmı        */
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/* Responsive */
+@media  (max-width:700px) {
+    .our-team{
+        height: 950px;
+    }
+    .non-slider{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .slider-kapsayici{
+        display: none;
+    }
+}
+@media  (max-width:500px){
+    .our-team{
+        height: 850px;
+    }
+    .non-slider-kapsayici-img h1{
+        font-size: 11px;
+        margin-top:5px;
+    }
+    .non-slider-kapsayici-img p{
+        font-size:8px;
+    }
+}
+

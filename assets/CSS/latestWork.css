@@ -1,0 +1,24 @@
+/*  Başlık ve yıldızlı kısım main-fetures.css dosyasında   */
+
+.latest-Work{
+    height: auto;
+    width: 100%;
+}
+
+.latest-work-img-list{
+    width: 90%;
+    margin:50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.latest-work-img-list .latest-work-img{
+    width: 33%;
+}
+.latest-work-img img{
+    max-width: 90%;
+    margin: 20px 5px;
+}
+.latest-work-img img:nth-child(2n+1){
+    margin-bottom: 0px;
+}

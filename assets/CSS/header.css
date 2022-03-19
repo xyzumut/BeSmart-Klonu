@@ -1,0 +1,176 @@
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+*{margin: 0px;padding: 0;font-size: 12px;font-family: sans-serif;}
+ul , li{list-style: none;}
+a{text-decoration: none;}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+.header{
+    width: 100%;height: 80px;
+    background-color:white;
+    display: block;
+    position: sticky;
+    z-index: 9999;
+    top: 0;
+}
+/* Header LOGO kodları*/
+.header-top-logo{
+    width: 10%;height: 100%;
+    display: inline-flex;
+    align-items: center;
+}
+.header-top-logo a{
+    font-size: 38px;
+    color: #454545;
+    margin-left: 70px;
+}
+.header-top-logo a:hover:not(span){/*burada ne yanlış var sor mutlaka*/
+    opacity: 0.5;
+}
+.header-top-logo span {
+    font-size: 38px;
+    color: #34b1c4;
+}
+/* Header LOGO kodları*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/* header menu kodları responsive olmayan*/
+.header-top-menu{
+    width: 75%;height: 100%;
+    float: right;
+    margin-right:30px ;
+}
+.header-top-menu ul{
+    width: 100%;height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.header-top-menu ul li a{
+    padding: 10px;
+    font-size: 20px;
+}
+.header-top-menu ul li a:hover{
+    color: #34b1c4;
+}
+.header-top-menu ul li:nth-child(9) a{
+    background-color: #34b1c4;
+    border: 1px #34b1c4 solid;
+    border-radius: 15px;
+    color: white;
+    padding: 20px 30px;
+}
+.header-top-menu ul li:nth-child(9) a:hover{
+    background-color: white;
+    border: 1px #34b1c4 solid;
+    border-radius: 15px;
+    color: #34b1c4;
+    transition: all 300ms ease-in;
+}
+.header-top-menu ul li:nth-child(1) a{
+    color: #34b1c4;
+}
+.header-top-menu ul li a{
+    color: #454545;
+} 
+/* header menu kodları responsive olmayan*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+
+
+
+
+/*  hamburger menü kodları başlangıcı*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+    #kontrol{
+        display: none;
+    }
+    .kontrol{
+        float: right;
+        display: none;
+    }
+    .burger-color{
+        color:#545861 !important ;
+        padding: 2px 7px;
+        border:1px solid #e4e4e4 ;
+        border-radius: 10px ;
+    }
+    .burger-color:hover{
+        background-color: #e4e4e4;
+    }
+/*   hamburger menü kodları bitişi   */
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+
+/*   Responsive Kodları Başlangıç    */
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+@media screen and (max-width:1340px) and (min-width:1250px){
+    .header{
+        height: 120px;
+    }
+    .header-top-logo{
+        height: 50%;
+    }
+    .header-top-menu{
+        position: relative;
+        top: 40px;
+        height: 50%;
+        display: inline-block;
+        width: 80%;
+    }
+}
+@media screen and (max-width:1249px) and (min-width:1021px){
+    .header-top-menu ul li a{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:1080px){
+    .kontrol{
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 50px;
+    }
+    input:checked + .header-top-menu{
+        display: block;
+        transition:all 1s;
+    }
+    .header-top-menu{
+        display: none;
+        background-color: white;
+        z-index: 100;
+        height: 300px;
+        width: 100%;
+        float: none;
+    }
+    .header-top-menu ul{
+        display: block;
+        text-align: left;
+        overflow-y: auto;
+        border-top:1px solid #E0E3E5 ;
+    }
+    .header-top-menu ul li{
+        margin: 30px;
+    }
+    .header-top-menu ul li:nth-child(9) a{
+        display: block;
+        width: 90%;
+    }
+}
+@media screen and (max-width:499px){
+    .header-top-logo a{
+        margin-left: 40px;
+    }
+    .kontrol{
+        right: 10px;
+    }
+}
+
+/*     Responsive Kodları Bitiş      */
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/

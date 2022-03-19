@@ -1,0 +1,74 @@
+footer{
+    width: 100%;
+    background-color: #2f3539;
+    border-bottom: 1px solid #393f43;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/*  footer logo kodları  */
+.footer-logo{
+    text-align: center;
+    width: 100%;
+}
+.footer-logo h1{
+    font-size: 36px;
+    color: white;
+    
+}
+.footer-logo span{
+    color: #3498db;
+    font-size: 40px;
+}
+/*  footer logo kodları  */
+
+/*  copyright kodları  */
+.copyright p {
+    font-size: 16px;
+    color: #cecece;
+}
+.copyright a{
+    font-size: 16px;
+    color: #3498db;
+    text-decoration: underline;
+}
+/*  copyright kodları  */
+
+/*  copyright-list kodları  */
+.copyright-list ul li{
+    float: left;
+    margin: 10px 20px 10px 20px;
+    border: 1px solid #cecece;
+    border-radius: 100%;
+    padding: 10px;
+    color: #cecece;
+}
+.copyright-list ul li:hover{
+    border-color: #3498db;
+    background-color: #3498db;
+    color: white;
+}
+/*  copyright-list kodları  */
+
+
+/*  responsive  kodlar */
+
+@media screen and (max-width:500px) {
+    .copyright p{
+        font-size: 12px;
+    }
+    .copyright a{
+        font-size: 12px;
+    }
+    .copyright-list ul li{
+        padding: 7px;
+        margin: 6px 10px 5px 10px;
+    }
+    .fa-2x{
+        font-size: 1.5em;
+    }
+}

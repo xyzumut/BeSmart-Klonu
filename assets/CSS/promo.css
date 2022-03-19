@@ -1,0 +1,112 @@
+.promo-container{
+    width: 100%;
+    height: 600px;
+    background-color: #34b1c4;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+/* promo content kodları*/
+.promo-content{
+    width: 40%;
+}
+.promo-content-header h1{
+    font-size: 32px;
+    color: white;
+    margin-bottom: 40px;
+    line-height: 40px;
+}
+.promo-content-paragraph p{
+    font-size: 15px;
+    color: white;
+    margin-bottom: 40px;
+    line-height: 20px;
+}
+.promo-content-list li{
+    color: white;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+.promo-content-list i{
+    font-size: 1.5em !important;
+}
+.discover-more-button-promo{  
+    margin-top: 40px;
+}
+.discover-more-button-promo a{
+    background-color: white;
+    border: 1px solid white;
+    color: #454545;
+    font-size: 15px;
+    padding: 20px 50px;
+    border-radius: 10px;
+}
+.discover-more-button-promo a:hover{
+    background-color:inherit ;
+    color: white;
+}
+/* promo content kodları*/
+
+
+/* promo img kodları*/
+
+.promo-img{
+    width: 30%;
+}
+.promo-img img{
+    max-width: 100%;
+    float: right;
+    margin-right: 30px;
+}
+
+/* promo img kodları*/
+
+
+
+/* responsive */
+@media screen and (max-width:1200px) {
+    .promo-container{
+        height: 700px;
+    }
+    .promo-img{
+        width: 40%;
+    }
+}
+@media screen and (max-width:900px){
+    .promo-container{
+        flex-direction: column;
+        height: 1070px;
+    }
+    .promo-content{
+        width: 80%;
+        text-align: center;
+        margin-top: 120px;
+    }
+    .promo-content-list , .discover-more-button-promo{
+        text-align: left;
+    }
+    .promo-img{
+        width: 65%;
+    }
+}
+@media screen and (max-width:600px){
+    .discover-more-button-promo{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .promo-img{
+        width: 65%;
+    }
+    
+    .discover-more-button-promo a{
+        font-size: 13px;
+        padding: 15px 40px;
+    }
+}
+@media screen and (max-width:400px){
+    .promo-img{
+        width: 70%;
+    }
+}

@@ -1,0 +1,234 @@
+.main-features{
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    display: block;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*  features header kısmı başlangıç*/
+
+.features-header{
+    height: auto;
+    width: 100%;
+    background-color: white;
+    position: relative;
+}
+.features-header-header h1{
+    font-size: 50px;
+    text-align: center;
+    padding-top: 50px;
+    color: #454545;
+}
+.yildiz-cizgi{
+    position: relative;
+    display: block;
+    margin-top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 20px;
+    background-color: inherit;
+    text-align: center;
+}
+.line{
+    display: inline-block;
+    width: 70px;
+    height: 1px;
+    background-color: #34b1c4;
+    margin: 5px 8px;
+}
+.yildiz{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0px;
+    color: #34b1c4;
+}
+.features-header-content{
+    background-color: inherit;
+    display: block;
+    text-align: center;
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.features-header-content p{
+    font-size: 20px;
+    color: #858585;
+}
+
+/*  features header kısmı bitiş*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@*/
+/* features content başlangıç*/
+
+.features-content{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 90px;
+}
+.content{
+    margin-top: 40px;
+    width: 30%;
+    text-align: center;
+}
+.content-text p{
+    font-size: 20px;
+    color: #858585;
+    
+}
+.content-header h3{
+    font-size: 30px;
+    margin: 20px 0;
+}
+.icon-features{
+    display: block;
+    color: #34b1c4;
+}
+/* features content bitiş*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@*/
+/* features content2 başlangıç*/
+.features-content2{
+    margin-top: 150px;
+    width: 100%;
+    background-color: #EEF0F1;
+    display: flex;
+}
+.features-img{
+    margin: 5% 50px 20px 5%;
+}
+.features-img img{
+    max-width: 100%;
+}
+.features-content2-text{
+    width: 40%;
+    margin-top: 100px;
+    margin-bottom: 120px;
+}
+.features-content2-text-header h1{
+    font-size: 38px;
+}
+.features-content2-text-paragraph{
+    margin-top: 50px;
+}
+.features-content2-text-paragraph p{
+    font-size: 20px;
+    line-height: 40px;
+}
+.features-content2-text-list{
+    margin-top: 50px;
+}
+.features-content2-text-list ul li{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.onay-icon{
+    color: #34b1c4;
+    margin-right:10px ;
+}
+.discover-button{
+    margin-top: 50px;
+    padding: 30px 0;
+    width: 250px;
+    text-align: center;
+    background-color: #34b1c4;
+    border-radius: 10px;
+}
+.discover-button a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+.discover-button:hover{
+    background-color: #2980b9;
+}
+/* features content2 bitiş*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+/*  Responsive  */
+@media screen and (max-width:1500px){
+    .features-content2-text{
+        width: 40%;
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width:1300px){
+    .features-content2{
+        display: block;
+        height:1500px ;
+    }
+    .features-content2 .features-img {
+        text-align: center;
+    }
+    .features-content2 .features-img img{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .features-content2-text  {
+        display: block;
+        width: 60%;
+        margin: auto;
+    }
+}
+@media screen and (max-width:800px) {
+    .features-header-header h1{
+        font-size: 40px;
+    }
+    .content{
+        width:40%; 
+    }
+    .features-content{
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        top: 40px;
+    }
+    .features-content2{
+        height:1450px ;
+    }
+    .features-content2-text-header h1{
+        font-size: 35px;
+    }
+    .features-content2-text-paragraph p{
+        font-size: 18px;
+    }
+    .features-content2-text-list ul li{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:600px) {
+    .content{
+        width:80%; 
+    }
+    .features-content2{
+        height:1300px ;
+    }
+    .features-content2-text-header h1{
+        font-size: 33px;
+    }
+    .features-content2-text-paragraph p{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .features-content2-text-list ul li{
+        font-size: 16px;
+        line-height: 10px;
+    }
+}
+@media screen and (max-width:450px) {
+    .features-content{
+        top: 60px;
+    }
+    .features-content2{
+        height:1250px ;
+    }
+    .discover-button{
+        margin-top: 30px;
+        padding: 20px 0;
+    }
+}

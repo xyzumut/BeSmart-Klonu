@@ -1,0 +1,87 @@
+.referanslar-container{
+    width: 100%;
+    display: flex;
+    background-color: #34b1c4;
+    height: 200px;
+}
+
+
+/* referanslar person kodları */
+
+.referans-person{
+    width: 40%;
+    border-right: 1px white solid;
+    height: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+}
+.referans-person-img{
+    width: 50%;
+}
+.referans-person-img img{
+    max-width: 100%;
+    border-radius: 100%;
+    border: 1px solid white;
+    padding: 5px;
+    margin-left: 30px;
+
+}
+.referans-person-nameTitle h1 , .referans-person-nameTitle h2{
+    font-size: 18px;
+    color: white;
+}
+
+/* referanslar person kodları */
+
+/* referanslar comment kodları */
+.referans-comment{
+    width: 50%;
+    position: relative;
+}
+.referans-comment-paragraph{
+    display: inline-block;
+    position: absolute;
+    width: 60%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.referans-comment-paragraph p{
+    font-size: 18px;
+    color: white;
+}
+
+/* referanslar comment kodları */
+
+
+/* responsive kodları */
+
+@media screen and (max-width:900px) {
+    .referanslar-container{
+        flex-direction: column;
+        height: 400px;
+    }
+    .referans-person{
+        width: 100%;
+        height: 50%;
+        border-bottom: 1px white solid;
+    }
+    .referans-comment{
+        width: 100%;
+        height: 50%;
+        text-align: center;
+    }
+    .referans-comment-paragraph{
+        position: relative;
+    }
+}
+@media screen and (max-width:600px){
+    .referans-person-img img{
+        margin-left: 15px;
+    }
+    .referans-person-nameTitle h1 , .referans-person-nameTitle h2{
+        font-size: 16px;
+    }
+}
