@@ -3,6 +3,6 @@ Aldığım bir canlı eğitim sonunda bitirme projesi mahiyetinde ödev olarak v
 
 ## Görseller
 <div align="center">
-    <img src="./assets/img/readme/gorsel1.jpg" />
+    <img src="./assets/readme/readme.svg" />
 </div>
 
