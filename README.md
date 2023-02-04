@@ -4,7 +4,7 @@
 <h4 class='' style='margin:30px auto;'>--- Görseller ---</h4>
 <div align="center">
     <div style="
-        display:flex;flex-direciton:column;flex-wrap:wrap;height:350px;justify-content:space-around;align-content:space-around;
+        display:flex;flex-direciton:column;flex-wrap:wrap;height:350px;justify-content:space-around;align-content:space-around;width:100%;background-color:red;
     ">
         <img width="40%" style="border:1px dashed #34b1c4" src="./assets/readme/gorsel1.jpg" />
         <img width="40%" style="border:1px dashed #34b1c4" src="./assets/readme/gorsel2.jpg" />
