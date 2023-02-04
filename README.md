@@ -12,4 +12,8 @@
         <img width="40%" style="border:1px dashed #34b1c4" src="./assets/readme/gorsel3.jpg" />
         <img width="40%" style="border:1px dashed #34b1c4" src="./assets/readme/gorsel4.jpg" />
     </div>
+    <img style="border:1px dashed #34b1c4" src="./assets/readme/gorsel1.jpg" />
+    <img style="border:1px dashed #34b1c4" src="./assets/readme/gorsel2.jpg" />
+    <img style="border:1px dashed #34b1c4" src="./assets/readme/gorsel3.jpg" />
+    <img style="border:1px dashed #34b1c4" src="./assets/readme/gorsel4.jpg" />
 </div>
